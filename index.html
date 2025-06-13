@@ -221,15 +221,15 @@
 
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
             gap: 15px;
             margin: 30px 0;
         }
 
         .result-image {
             width: 100%;
-            height: 600px;
-            object-fit: cover;
+            height: auto; /* ajusta a altura automaticamente */
+            object-fit: contain; /* exibe a imagem inteira */
             border-radius: 15px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.15);
             transition: transform 0.3s ease;
@@ -340,10 +340,24 @@
                 <img src="res10.jpeg" alt="Resultado de transformação 10" class="result-image" onerror="this.style.display='none'">
                 <img src="res11.jpeg" alt="Resultado de transformação 11" class="result-image" onerror="this.style.display='none'">
                 <img src="res12.jpeg" alt="Resultado de transformação 12" class="result-image" onerror="this.style.display='none'">
-		<img src="res_renata.jpeg" alt="Resultado de transformação Renata" class="result-image" onerror="this.style.display='none'">
             </div>
         </div>
 
+        <div class="results-section">
+            <h2 style="text-align: center; color: #ff6b6b; margin-bottom: 30px; font-size: 2em;">
+                📸 VEJA O MEU RESULTADO!
+            </h2>
+
+            <div class="gallery-grid">
+                <img src="resn1.jpg" alt="Resultado Renata 1" class="result-image" onerror="this.style.display='none'">
+                <img src="resn2.jpg" alt="Resultado Renata 2" class="result-image" onerror="this.style.display='none'">
+                <img src="resn3.jpg" alt="Resultado Renata 3" class="result-image" onerror="this.style.display='none'">
+                <img src="resn4.jpg" alt="Resultado Renata 4" class="result-image" onerror="this.style.display='none'">
+                <img src="resn5.jpg" alt="Resultado Renata 5" class="result-image" onerror="this.style.display='none'">
+                <img src="resn6.jpeg" alt="Resultado Renata 6" class="result-image" onerror="this.style.display='none'">
+                
+            </div>
+        </div>
 
         <div class="video-section">
             <h2 style="color: #ff6b6b; margin-bottom: 20px;">📹 Veja o depoimento completo desta Maravilhosa:</h2>
